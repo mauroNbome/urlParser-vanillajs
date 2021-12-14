@@ -1,0 +1,148 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: #fdfffa;
+    font-family: "Open Sans", sans-serif;
+}
+
+.inner-wrapper {
+    width: 50%;
+    min-width: 20rem;
+    max-width: 34rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 5.55%;
+}
+
+.title {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 35px;
+    font-weight: 600;
+    height: 5rem;
+}
+.title span {
+    color: #148dde;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+
+.submit-button {
+    height: 4rem;
+    width: 240px;
+    border-radius: 50px;
+    margin: 2rem auto 4rem auto;
+    border: 1px solid #148dde;
+    color: #148dde;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.object {
+    background-color: #148dde;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    border-radius: 11px;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+.object::after {
+    content: "";
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid #000;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    right: -81px;
+}
+
+.error {
+    padding: 1rem;
+    color: red;
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.box-container {
+    width: 100%;
+}
+
+.item-wrapper {
+    margin-bottom: 3rem;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-string {
+    background-color: #f3f5f0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 95%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #8d8e8b;
+    padding: 0.75em 0.75em 0 0.75em;
+    font-size: 18px;
+}
+
+.input-string:hover {
+    border-bottom: 2px solid #000;
+    margin-bottom: -1px;
+}
+
+.input-string:focus {
+    border-bottom: 2px solid #148dde;
+    margin-bottom: -1px;
+}
+
+.invalid {
+    border-bottom: 2px solid red !important;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.button-container button {
+    height: 4rem;
+    width: 240px;
+    border-radius: 50px;
+    margin: 2rem auto 4rem auto;
+    border: 1px solid #148dde;
+    color: #148dde;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.button-container button:hover {
+    background-color: #f3f5f0;
+}
+
+.button-container button:active {
+    background-color: #ddeaed;
+}
