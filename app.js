@@ -97,11 +97,9 @@ function hideError() {
     document.getElementById("error").style.display = "none"
 
     for (let i = 0; i < 2; i++) {
-        console.log(
-            document
-                .getElementsByClassName("input-string")
-                [i].classList.remove("invalid")
-        )
+        document
+            .getElementsByClassName("input-string")
+            [i].classList.remove("invalid")
     }
 }
 
@@ -110,11 +108,9 @@ function displayError() {
     document.getElementById("error").style.display = "inline-block"
 
     for (let i = 0; i < 2; i++) {
-        console.log(
-            document
-                .getElementsByClassName("input-string")
-                [i].classList.add("invalid")
-        )
+        document
+            .getElementsByClassName("input-string")
+            [i].classList.add("invalid")
     }
 }
 
